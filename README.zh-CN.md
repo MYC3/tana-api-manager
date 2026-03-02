@@ -56,7 +56,10 @@ scripts/check_tana_local_api.sh
 期望输出：包含 `"status":"ok"` 的 JSON。
 
 ## 在提示词中使用
+## 默认保存行为
 
+- 当用户要求把内容保存到 Tana，或调用 Tana 做内容记录时，默认将新增内容保存到 `today`。
+- 仅当用户明确指定 supertag 或目标目录/父节点时，才覆盖该默认规则。
 - “使用 `tana` 列出我的 tags”
 - “使用 `tana` 读取节点 <nodeId>”
 

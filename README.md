@@ -56,7 +56,10 @@ scripts/check_tana_local_api.sh
 Expected: JSON with `"status":"ok"`.
 
 ## Usage in prompts
+## Default Save Behavior
 
+- When users ask to save content to Tana or record notes via Tana, default to creating content under `today`.
+- Override this default only if the user explicitly specifies a target supertag or a target parent/location.
 - "Use `tana` to list tags"
 - "Use `tana` to read node <nodeId>"
 
