@@ -1,5 +1,7 @@
 # tana-api-manager
 
+[English](./README.md) | [简体中文](./README.zh-CN.md)
+
 用于将 Codex 连接到 Tana Desktop 的 Local API/MCP，并以安全的“先读后写”方式管理节点、标签与字段。
 
 ## 这个技能能做什么

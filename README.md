@@ -1,5 +1,7 @@
 # tana-api-manager
 
+[English](./README.md) | [简体中文](./README.zh-CN.md)
+
 Connect Codex to Tana Desktop Local API/MCP for safe read/write workflows on nodes, tags, and fields.
 
 ## What this skill does
