@@ -19,6 +19,16 @@ cp -R tana-api-manager "$CODEX_HOME/skills/tana-api-manager"
 
 2. 在项目的 `AGENTS.md` 中增加技能条目（名称、描述、路径）。
 
+## 通过 skill-installer 从 GitHub 安装
+
+如果你使用内置 `skill-installer`，可直接从本仓库安装：
+
+```bash
+# 示例：从 GitHub 仓库路径安装
+# 在 Codex 的 skill-installer 流程中输入：
+MYC3/tana-api-manager
+```
+
 ## 前置条件
 
 1. Tana Desktop 保持运行

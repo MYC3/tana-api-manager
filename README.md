@@ -19,6 +19,16 @@ cp -R tana-api-manager "$CODEX_HOME/skills/tana-api-manager"
 
 2. Add a skill entry in your project's `AGENTS.md` (name, description, file path).
 
+## Install via skill-installer (GitHub)
+
+If you use the built-in `skill-installer`, install directly from this repo:
+
+```bash
+# Example: install from GitHub repo path
+# Use the skill-installer workflow in Codex and provide:
+MYC3/tana-api-manager
+```
+
 ## Prerequisites
 
 1. Tana Desktop running
