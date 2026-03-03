@@ -82,7 +82,7 @@ Expected: JSON with `"status":"ok"`.
 
 ## Default Save Behavior
 
-- When users ask to save content to Tana or record notes via Tana, default to creating content under Tana workspace `Daily Notes`.
+- When users ask to save content to Tana or record notes via Tana, default to the workspace's Daily Notes day node for today: call `get_or_create_calendar_node` (`granularity: "day"`) and write via `import_tana_paste` to that node.
 - Override this default only if the user explicitly specifies a concrete directory and tags.
 
 ## Usage in prompts
