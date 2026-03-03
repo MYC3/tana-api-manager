@@ -82,8 +82,8 @@ scripts/check_tana_local_api.sh
 
 ## 默认保存行为
 
-- 当用户要求把内容保存到 Tana，或调用 Tana 做内容记录时，默认将新增内容保存到 Tana workspace 的 `Daily Notes` 下。
-- 仅当用户明确指定具体目录和 tags时，才覆盖该默认规则。
+- 当用户要求把内容保存到 Tana，或调用 Tana 做内容记录时，默认写入该 workspace 当天的 Daily Notes 日历节点：先用 `get_or_create_calendar_node`（`granularity: "day"`）获取/创建 day node，再用 `import_tana_paste` 写入该节点。
+- 仅当用户明确指定具体目录和 tags 时，才覆盖该默认规则。
 
 ## 在提示词中使用
 
