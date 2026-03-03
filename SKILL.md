@@ -7,6 +7,11 @@ description: Connect Codex to Tana via the local MCP server in Tana Desktop to g
 
 Use this skill to configure and operate Tana's Local API/MCP from Codex with safe read/write workflows.
 
+## Command Rule
+
+- Use `/tana <content>` as the unified trigger format.
+- Treat `/tana ...` as a save-or-record intent by default.
+
 ## Quick Start (Local MCP)
 
 1. Open Tana Desktop.
@@ -74,6 +79,7 @@ Notes:
 - Test mutations on disposable nodes first.
 - Keep bulk edits scoped by explicit search filters.
 - Use `trash_node` only after confirming node identity from `read_node`.
+- Parse `/tana <content>` and write the `<content>` body to Tana.
 - For save-or-record requests without an explicit destination, you MUST call `get_or_create_calendar_node` with `granularity: "day"` and write using `import_tana_paste` to the returned day node.
 - Never write save-or-record content to workspace root/home when destination is unspecified.
 - If user explicitly specifies a concrete directory and tags, follow the user-specified destination and tags instead.
