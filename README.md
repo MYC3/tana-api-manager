@@ -41,7 +41,7 @@ Connect Codex to Tana Desktop Local API/MCP for safe read/write workflows on nod
 1. Copy this folder into your Codex skills directory, for example:
 
 ```bash
-cp -R tana "$CODEX_HOME/skills/tana"
+cp -R tana "$CODEX_HOME/skills"
 ```
 
 2. Add a skill entry in your project's `AGENTS.md` (name, description, file path).
@@ -53,7 +53,7 @@ If you use the built-in `skill-installer`, install directly from this repo:
 ```bash
 # Example: install from GitHub repo path
 # Use the skill-installer workflow in Codex and provide:
-<owner>/tana-local-mcp
+<owner>-local-mcp
 ```
 
 ## Prerequisites
@@ -87,14 +87,14 @@ Expected: JSON with `"status":"ok"`.
 
 ## Usage in prompts
 
-- `/tana Today I finished release validation`
-- `/tana Record: customer feedback summary`
+- `@tana Today I finished release validation`
+- `@tana Record: customer feedback summary`
 
 ## Repository layout
 
 - `SKILL.md`
 - `agents/openai.yaml`
-- `references/tana-local-mcp-ops.md`
+- `references-local-mcp-ops.md`
 - `scripts/check_tana_local_api.sh`
 
 ## License
