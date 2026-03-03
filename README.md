@@ -87,8 +87,8 @@ Expected: JSON with `"status":"ok"`.
 
 ## Usage in prompts
 
-- "Use `tana` to list tags"
-- "Use `tana` to read node <nodeId>"
+- `/tana Today I finished release validation`
+- `/tana Record: customer feedback summary`
 
 ## Repository layout
 
