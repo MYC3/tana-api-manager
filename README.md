@@ -87,14 +87,15 @@ Expected: JSON with `"status":"ok"`.
 
 ## Usage in prompts
 
-- `@tana Today I finished release validation`
-- `@tana Record: customer feedback summary`
+- `/tana Today I finished release validation`
+- `/tana Record: customer feedback summary`
+- If `/tana` does not show in a new thread, use `$tana <content>` explicitly.
 
 ## Repository layout
 
 - `SKILL.md`
 - `agents/openai.yaml`
-- `references-local-mcp-ops.md`
+- `references/tana-local-mcp-ops.md`
 - `scripts/check_tana_local_api.sh`
 
 ## License
